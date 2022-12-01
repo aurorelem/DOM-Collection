@@ -11,54 +11,42 @@ const collection = [
         "Cleopatra Coleman",
       ],
       description: "Un policier est obsédé par la traque d'un mystérieux tueur en série dont les crimes défient toutes explications...",
-      picture: "assets/In the shadow of the mood",  // Vérifier que ça fct bien
+      picture: "assets/shadow-of-the-mood.jpg",  // Vérifier que ça fct bien
       link: "https://www.youtube.com/watch?v=iU7B59T1l70",
     },
-  ];
 
-  [
     {
-      title: "",
-      kind: "",
-      genre: ["", "",""],
-      realisator: "",
-      releaseYear: "",
+      title: "Dark",
+      kind: "Serie",
+      genre: ["Science fiction", "Thriller"],
+      realisator: "Louis Hofmann",
+      releaseYear: "2017",
       cast: [
-        "",
-        "",
-        "",
-        "",
+        "Louis Hofmann",
+        "Lisa Vicari",
+        "Moritz Jahn",
       ],
-      description: "",
-      picture: "link/to/a/picture",
-      link: "",
+      description: "Un enfant disparu lance quatre familles dans une quête éperdue pour trouver des réponses. La chasse au coupable fait émerger les péchés et les secrets d'une petite ville.",
+      picture: "assets/dark.jpg",
+      link: "https://www.youtube.com/watch?v=vx9HQwjTcXI",
     },
-  
-    // ...
-  ];
 
-  const collection = [
     {
-      title: "",
-      kind: "",
+      title: "Une offrande à la tempête",
+      kind: "Movie",
       genre: ["", "",""],
-      realisator: "",
-      releaseYear: "",
+      realisator: "Fernando González Molina",
+      releaseYear: "2021",
       cast: [
-        "",
-        "",
-        "",
-        "",
+        "Leonardo Sbaraglia",
+        "Marta Etura",
+        "Álvaro Cervantes",
       ],
-      description: "",
-      picture: "link/to/a/picture",
-      link: "",
+      description: "Dans ce troisième volet de la trilogie du Baztán, Amaia enquête sur d'horribles rituels et des décès suspects d'enfants, tandis que son entourage court un grave danger.",
+      picture: "assets/offrande-à-la-tempête.jpg",
+      link: "\watch",  // A tester car me met directement ça au lieu du lien
     },
-  
-    // ...
-  ];
 
-  const collection = [
     {
       title: "",
       kind: "",
