@@ -1,5 +1,5 @@
 const collection = [
-    {
+   {
       title: "In the shadow of the moon",
       kind: "Movie",
       genre: "Thriller",
@@ -11,7 +11,7 @@ const collection = [
         "Cleopatra Coleman",
       ],
       description: "Un policier est obsédé par la traque d'un mystérieux tueur en série dont les crimes défient toutes explications...",
-      picture: "assets/shadow-of-the-mood.jpg",  // Vérifier que ça fct bien
+      picture: "./assets/shadow-of-the-mood.jpg",  // Vérifier que ça fct bien
       link: "https://www.youtube.com/watch?v=iU7B59T1l70",
     },
 
@@ -27,7 +27,7 @@ const collection = [
         "Moritz Jahn",
       ],
       description: "Un enfant disparu lance quatre familles dans une quête éperdue pour trouver des réponses. La chasse au coupable fait émerger les péchés et les secrets d'une petite ville.",
-      picture: "assets/dark.jpg",
+      picture: "./assets/dark.jpg",
       link: "https://www.youtube.com/watch?v=vx9HQwjTcXI",
     },
 
@@ -43,7 +43,7 @@ const collection = [
         "Álvaro Cervantes",
       ],
       description: "Dans ce troisième volet de la trilogie du Baztán, Amaia enquête sur d'horribles rituels et des décès suspects d'enfants, tandis que son entourage court un grave danger.",
-      picture: "assets/offrande-à-la-tempête.jpg",
+      picture: "./assets/offrande-à-la-tempête.jpg",
       link: "\watch",  // A tester car me met directement ça au lieu du lien
     },
 
@@ -59,7 +59,7 @@ const collection = [
         "Dakota Fanning",
       ],
       description: "Dans le New York de la fin du 19ème siècle sous la responsabilité du chef de police Theodore Roosevelt, le spécialiste des maladies mentales Laszlo Kreizler s'intéresse à un impitoyable tueur qui laisse derrière lui les corps mutilés d’enfants. Face à l'impassibilité des pouvoirs publics, Kreizler tente d’identifier le responsable de ces meurtres horribles, épaulé par l'illustrateur criminel John Moore et Sara Howard, la première femme à faire son entrée dans l'univers très masculin de la police.",
-      picture: "asset/l-aliéniste.jpg",
+      picture: "./asset/l-aliéniste.jpg",
       link: "\watch",
     },
   
@@ -75,7 +75,7 @@ const collection = [
         "Anna Torv",
       ],
       description: "Comment anticiper la folie quand on ignore comment fonctionnent les fous ? Deux agents du FBI imaginent une enquête aux méthodes révolutionnaires et se lancent dans une véritable odyssée pour obtenir des réponses.",
-      picture: "assets/mindhunter.jpg",
+      picture: "./assets/mindhunter.jpg",
       link: "\watch",
     },
   
@@ -91,7 +91,7 @@ const collection = [
         "Penelope Ann Miller",
       ],
       description: "Le parcours du cannibale de Milwaukee, l’un des tueurs en série les plus connus aux Etats-Unis : de son enfance difficile à sa condamnation en 1992, et comment l’incompétence et l’apathie de la police lui ont permis de poursuivre ses crimes durant plusieurs années.",
-      picture: "assets/dahmer.jpg",
+      picture: "./assets/dahmer.jpg",
       link: "\watch",
     },
   
@@ -108,7 +108,7 @@ const collection = [
       ],
       description: `Zodiac, l'insaisissable tueur en série qui sévit à la fin des années 60 et répandit la terreur dans la région de San Francisco, fut le Jack l'Eventreur de l'Amérique. Prodigue en messages cryptés, il semait les indices comme autant de cailloux blancs, et prenait un malin plaisir à narguer la presse et la police. Il s'attribua une trentaine d'assassinats, mais fit bien d'autres dégâts collatéraux parmi ceux qui le traquèrent en vain.
       Robert Graysmith, jeune et timide dessinateur de presse, n'avait ni l'expérience ni les relations de son brillant collègue Paul Avery, spécialiste des affaires criminelles au San Francisco Chronicle. Extérieur à l'enquête, il n'avait pas accès aux données et témoignages dont disposait le charismatique Inspecteur David Toschi et son méticuleux partenaire, l'Inspecteur William Armstrong. Le Zodiac n'en deviendrait pas moins l'affaire de sa vie, à laquelle il consacrerait dix ans d'efforts et deux ouvrages d'une vertigineuse précision..`,
-      picture: "asset/zodiac.jpg",
+      picture: "./assets/zodiac.jpg",
       link: "https://www.youtube.com/watch?v=6bFZL61OFzU",
     },
   
@@ -124,7 +124,7 @@ const collection = [
         "David Dencik",
       ],
       description: "Deux détectives de Copenhague enquêtent sur une affaire de meurtre ultra médiatisée.",
-      picture: "assets/octobre.jpg",
+      picture: "./assets/octobre.jpg",
       link: "\watch",
     },
   
@@ -140,7 +140,7 @@ const collection = [
         "Leonardo Sbaraglia",
       ],
       description: "Un an après avoir résolu une série de meurtres, Amaia est touchée de près par un mystère lié à sa précédente enquête. Deuxième partie de la trilogie du Baztan.",
-      picture: "assets/de-chair-et-d-os.jpg",
+      picture: "./assets/de-chair-et-d-os.jpg",
       link: "\watch",
     },
 
@@ -156,10 +156,59 @@ const collection = [
         "Herman Tømmeraas",
       ],
       description: "Dans un village norvégien pollué et troublé par la fonte des glaciers, la fin des temps semble bien réelle. Mais un combat doit opposer une légende à un mal ancestral.",
-      picture: "asset/ragnaök.jpg",
+      picture: "./assets/ragnaök.jpg",
       link: "https://www.youtube.com/watch?v=sYzsPT5MYQk",
     },
-  
   ];
+
+  function listElement() {
+    let main = document.createElement("main");
+    let section = document.createElement("section");
+
+    for (let element of collection) {
+      let article = document.createElement("article");
+      article.classeName = element.name;
+
+
+      let picture = document.createElement("img");
+      picture.setAttribute("src", element.picture);
+      article.appendChild(picture);
+
+      let genre = document.createElement("h5");
+      genre.innerText = element.genre;
+      article.appendChild(genre);
+
+      let kind = document.createElement("h6");
+      kind.innerText = element.kind;
+      article.appendChild(genre);
+
+      let title = document.createElement("h1");
+      title.innerText = element.title;
+      article.appendChild(title);
+
+      let realisator = document.createElement("h2");
+      realisator.innerText = element.realisator;
+      article.appendChild(realisator);
+
+      let cast = document.createElement("h3");
+      cast.innerText = element.cast;     
+      article.appendChild(cast);
+
+      let releaseYear = document.createElement("h4");
+      releaseYear.innerText = element.releaseYear;
+      article.appendChild(releaseYear);
+
+      let description = document.createElement("p");
+      description.innerText = element.description;
+      article.appendChild(description);
+
+      section.appendChild(article)
+      main.appendChild(section)
+      document.body.insertBefore(main, document.getElementsByTagName("footer")[0])
+
+    }
+
+  }
+  listElement();
 
 
