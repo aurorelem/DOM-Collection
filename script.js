@@ -11,7 +11,7 @@ const collection = [
         "Cleopatra Coleman",
       ],
       description: "Un policier est obsédé par la traque d'un mystérieux tueur en série dont les crimes défient toutes explications...",
-      picture: "./assets/shadow-of-the-mood.jpg",  // Vérifier que ça fct bien
+      picture: "./assets/shadow-of-the-moon.jpg", 
       link: "https://www.youtube.com/watch?v=iU7B59T1l70",
     },
 
@@ -59,7 +59,7 @@ const collection = [
         "Dakota Fanning",
       ],
       description: "Dans le New York de la fin du 19ème siècle sous la responsabilité du chef de police Theodore Roosevelt, le spécialiste des maladies mentales Laszlo Kreizler s'intéresse à un impitoyable tueur qui laisse derrière lui les corps mutilés d’enfants. Face à l'impassibilité des pouvoirs publics, Kreizler tente d’identifier le responsable de ces meurtres horribles, épaulé par l'illustrateur criminel John Moore et Sara Howard, la première femme à faire son entrée dans l'univers très masculin de la police.",
-      picture: "./asset/l-aliéniste.jpg",
+      picture: "./assets/l-aliéniste.jpg",
       link: "\watch",
     },
   
@@ -140,7 +140,7 @@ const collection = [
         "Leonardo Sbaraglia",
       ],
       description: "Un an après avoir résolu une série de meurtres, Amaia est touchée de près par un mystère lié à sa précédente enquête. Deuxième partie de la trilogie du Baztan.",
-      picture: "./assets/de-chair-et-d-os.jpg",
+      picture: "./assets/de-chair-et-d-os.jpeg",
       link: "\watch",
     },
 
@@ -156,7 +156,7 @@ const collection = [
         "Herman Tømmeraas",
       ],
       description: "Dans un village norvégien pollué et troublé par la fonte des glaciers, la fin des temps semble bien réelle. Mais un combat doit opposer une légende à un mal ancestral.",
-      picture: "./assets/ragnaök.jpg",
+      picture: "./assets/ragnarök.jpg",
       link: "https://www.youtube.com/watch?v=sYzsPT5MYQk",
     },
   ];
@@ -182,11 +182,11 @@ const collection = [
       kind.innerText = element.kind;
       article.appendChild(genre);
 
-      let title = document.createElement("h1");
+      let title = document.createElement("h2");
       title.innerText = element.title;
       article.appendChild(title);
 
-      let realisator = document.createElement("h2");
+      let realisator = document.createElement("h1");
       realisator.innerText = element.realisator;
       article.appendChild(realisator);
 
