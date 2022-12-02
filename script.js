@@ -145,21 +145,21 @@ const collection = [
     },
 
     {
-      title: "",
-      kind: "",
-      genre: ["", "",""],
-      realisator: "",
-      releaseYear: "",
+      title: "Ragnarök",
+      kind: "Serie",
+      genre: ["Drame", "Fantastique"],
+      realisator: "Adam Price",
+      releaseYear: "2020 ",
       cast: [
-        "",
-        "",
-        "",
-        "",
+        "David Stakston",
+        "Jonas Strand Gravli",
+        "Herman Tømmeraas",
       ],
-      description: "",
-      picture: "link/to/a/picture",
-      link: "",
+      description: "Dans un village norvégien pollué et troublé par la fonte des glaciers, la fin des temps semble bien réelle. Mais un combat doit opposer une légende à un mal ancestral.",
+      picture: "asset/ragnaök.jpg",
+      link: "https://www.youtube.com/watch?v=sYzsPT5MYQk",
     },
   
-
   ];
+
+
