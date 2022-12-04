@@ -1,11 +1,12 @@
 /*# sourceMappingURL=styles.css.map */
 * {
     margin: 0.1em;
-    width: 80%%;
+    
     
 }
 
 body {
+    padding: auto;
     font-family: sans-serif;
     background-color: beige;
     width: 100%;
