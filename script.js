@@ -7,7 +7,7 @@ const collection = [
       releaseYear: "2020",
       cast: [
         "Michael C. Hall",
-        "Boyd Holbrook",
+        "Boyd Holbrook  ",
         "Cleopatra Coleman",
       ],
       description: "Un policier est obsédé par la traque d'un mystérieux tueur en série dont les crimes défient toutes explications...",
@@ -178,10 +178,6 @@ const collection = [
       genre.innerText = element.genre;
       article.appendChild(genre);
 
-      let kind = document.createElement("h6");
-      kind.innerText = element.kind;
-      article.appendChild(genre);
-
       let title = document.createElement("h2");
       title.innerText = element.title;
       article.appendChild(title);
@@ -189,14 +185,14 @@ const collection = [
       let realisator = document.createElement("h1");
       realisator.innerText = element.realisator;
       article.appendChild(realisator);
+      
+      let releaseYear = document.createElement("h4");
+      releaseYear.innerText = element.releaseYear;
+      article.appendChild(releaseYear);
 
       let cast = document.createElement("h3");
       cast.innerText = element.cast;     
       article.appendChild(cast);
-
-      let releaseYear = document.createElement("h4");
-      releaseYear.innerText = element.releaseYear;
-      article.appendChild(releaseYear);
 
       let description = document.createElement("p");
       description.innerText = element.description;
